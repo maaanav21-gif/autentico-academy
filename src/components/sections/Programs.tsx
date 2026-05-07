@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import schoolImg from "@/assets/school-students.png";
 import labImg from "@/assets/science-lab.png";
 import collegeImg from "@/assets/college-internship.png";
-import admissionBrochure from "@assets/WhatsApp_Image_2026-04-22_at_11.33.47_AM_1776949652531.jpeg";
+import admissionBrochure from "";
 
 export default function Programs() {
   const programs = [

@@ -36,8 +36,12 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          {/* Recreated Logo in Type */}
+        <div className="flex items-center gap-3">
+          <img
+            src="/favicon.png"
+            alt="Autentico Academy"
+            className="h-11 w-11 shrink-0 object-contain"
+          />
           <div className="flex flex-col">
             <span className={`font-outfit font-bold text-xl leading-tight tracking-tight ${isScrolled ? "text-primary" : "text-white drop-shadow-md"}`}>
               AUTENTICO ACADEMY

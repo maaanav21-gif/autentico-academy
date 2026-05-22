@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-students.png";
+const heroImg = "/images/hero-students.jpg";
 
 export default function Hero() {
   const scrollToEnquiry = () => {

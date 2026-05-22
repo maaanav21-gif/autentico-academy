@@ -78,11 +78,13 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="aspect-square md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-muted bg-gray-100 flex items-center justify-center">
-              <p className="text-gray-500 text-center px-6">
-                Image removed (missing asset)<br />
-                Add a valid image later in /src/assets
-              </p>
+            <div className="aspect-square md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-muted">
+              <img
+                src="/images/about-academy.jpg"
+                alt="Students learning at Autentico Academy"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             </div>
 
             <div className="absolute -bottom-8 -left-8 bg-accent text-accent-foreground p-8 rounded-2xl shadow-xl max-w-[250px] hidden md:block">

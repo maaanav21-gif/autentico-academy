@@ -1,4 +1,4 @@
-import { GraduationCap, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -24,9 +24,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-12 w-12 rounded-xl bg-accent flex items-center justify-center">
-                <GraduationCap className="h-7 w-7 text-primary" />
-              </div>
+              <img
+                src="/favicon.png"
+                alt="Autentico Academy"
+                className="h-12 w-12 rounded-xl object-contain bg-white p-1"
+              />
               <div>
                 <p className="font-outfit font-extrabold text-lg leading-tight">
                   AUTENTICO

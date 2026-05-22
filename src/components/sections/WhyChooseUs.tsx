@@ -23,6 +23,33 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="lg:col-span-1 rounded-2xl overflow-hidden shadow-lg border border-border"
+          >
+            <img
+              src="/images/classroom-learning.jpg"
+              alt="Interactive classroom at Autentico Academy"
+              className="w-full h-64 lg:h-80 object-cover"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="lg:col-span-2 rounded-2xl overflow-hidden shadow-lg border border-border"
+          >
+            <img
+              src="/images/school-students.jpg"
+              alt="Students engaged in learning"
+              className="w-full h-64 lg:h-80 object-cover"
+            />
+          </motion.div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <motion.div

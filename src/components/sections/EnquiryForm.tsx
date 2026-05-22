@@ -244,7 +244,13 @@ export default function EnquiryForm() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-border bg-card p-6">
+            <div className="rounded-2xl overflow-hidden border border-border bg-card">
+              <img
+                src="/images/campus-building.jpg"
+                alt="Autentico Academy campus"
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-6">
               <div className="flex items-start gap-3 mb-4">
                 <MapPin className="h-5 w-5 mt-0.5 text-secondary shrink-0" />
                 <div>
@@ -266,6 +272,7 @@ export default function EnquiryForm() {
                     Hills), Bengaluru — 560 073
                   </p>
                 </div>
+              </div>
               </div>
             </div>
           </motion.div>

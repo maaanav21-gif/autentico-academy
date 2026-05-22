@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import schoolImg from "@/assets/school-students.png";
-import labImg from "@/assets/science-lab.png";
-import collegeImg from "@/assets/college-internship.png";
+const schoolImg = "/images/school-students.jpg";
+const labImg = "/images/science-lab.jpg";
+const collegeImg = "/images/college-internship.jpg";
+const admissionsImg = "/images/classroom-learning.jpg";
 
 export default function Programs() {
   const programs = [
@@ -141,14 +142,20 @@ export default function Programs() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 bg-primary rounded-3xl overflow-hidden shadow-2xl"
+          className="mt-20 bg-primary rounded-3xl overflow-hidden shadow-2xl relative"
         >
-          <div className="p-10 text-white">
+          <img
+            src={admissionsImg}
+            alt="Classroom learning at Autentico Academy"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/70" />
+          <div className="relative p-10 text-white">
             <h3 className="text-3xl font-bold mb-4">
               School Admissions 2026-2027
             </h3>
 
-            <p className="text-blue-100 mb-6">
+            <p className="text-blue-100 mb-6 max-w-xl">
               Secure your child's future with structured learning and expert
               guidance.
             </p>

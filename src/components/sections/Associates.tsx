@@ -1,10 +1,20 @@
-import { motion } from "framer-motion";
-
 const associates = [
-  "VAARUNYA BIOLABS PRIVATE LIMITED",
-  "INSILICOMICS",
-  "INDIAN INSTITUTE OF SCIENCE",
-  "NIUM"
+  {
+    name: "VAARUNYA BIOLABS PRIVATE LIMITED",
+    image: "/images/science-lab.jpg",
+  },
+  {
+    name: "INSILICOMICS",
+    image: "/images/college-internship.jpg",
+  },
+  {
+    name: "INDIAN INSTITUTE OF SCIENCE",
+    image: "/images/campus-building.jpg",
+  },
+  {
+    name: "NIUM",
+    image: "/images/classroom-learning.jpg",
+  },
 ];
 
 export default function Associates() {
@@ -14,28 +24,41 @@ export default function Associates() {
         <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-8">
           Our Esteemed Business Associates & Partners
         </p>
-        
-        {/* Simple marquee effect */}
+
         <div className="relative flex overflow-x-hidden">
-          <div className="animate-marquee whitespace-nowrap flex items-center gap-16 md:gap-24">
+          <div className="animate-marquee whitespace-nowrap flex items-center gap-12 md:gap-20">
             {[...associates, ...associates, ...associates].map((associate, i) => (
-              <span 
-                key={i} 
-                className="text-lg md:text-xl font-bold text-foreground/40 font-outfit"
+              <div
+                key={i}
+                className="inline-flex items-center gap-4 px-4 py-2 rounded-xl bg-card border border-border shadow-sm"
               >
-                {associate}
-              </span>
+                <img
+                  src={associate.image}
+                  alt={associate.name}
+                  className="h-12 w-12 rounded-lg object-cover shrink-0"
+                />
+                <span className="text-base md:text-lg font-bold text-foreground/70 font-outfit">
+                  {associate.name}
+                </span>
+              </div>
             ))}
           </div>
-          
-          <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center gap-16 md:gap-24 ml-16 md:ml-24">
-             {[...associates, ...associates, ...associates].map((associate, i) => (
-              <span 
-                key={i} 
-                className="text-lg md:text-xl font-bold text-foreground/40 font-outfit"
+
+          <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center gap-12 md:gap-20 ml-12 md:ml-20">
+            {[...associates, ...associates, ...associates].map((associate, i) => (
+              <div
+                key={`b-${i}`}
+                className="inline-flex items-center gap-4 px-4 py-2 rounded-xl bg-card border border-border shadow-sm"
               >
-                {associate}
-              </span>
+                <img
+                  src={associate.image}
+                  alt={associate.name}
+                  className="h-12 w-12 rounded-lg object-cover shrink-0"
+                />
+                <span className="text-base md:text-lg font-bold text-foreground/70 font-outfit">
+                  {associate.name}
+                </span>
+              </div>
             ))}
           </div>
         </div>

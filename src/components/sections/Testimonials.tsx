@@ -7,16 +7,19 @@ export default function Testimonials() {
       text: "The NEET crash course was incredibly focused. The faculty's systematic approach helped my daughter improve her mock scores significantly in just weeks.",
       author: "Priya Sharma",
       role: "Parent of Class 12 Student",
+      avatar: "/images/avatar-parent-1.jpg",
     },
     {
       text: "I joined the virtual internship program and the industry mentorship was top-notch. It gave me the practical exposure I needed to secure my first job.",
       author: "Rahul Verma",
       role: "College Student",
+      avatar: "/images/avatar-student-1.jpg",
     },
     {
       text: "What sets Autentico apart is the one-to-one interaction. They actually care about holistic development, not just making students memorize textbooks.",
       author: "Dr. K. N. Rao",
       role: "Parent of Class 9 Student",
+      avatar: "/images/avatar-parent-2.jpg",
     }
   ];
 
@@ -46,9 +49,16 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-lg leading-relaxed mb-8 italic text-white/90">"{t.text}"</p>
-              <div>
-                <p className="font-bold font-outfit text-xl">{t.author}</p>
-                <p className="text-blue-200 text-sm">{t.role}</p>
+              <div className="flex items-center gap-4">
+                <img
+                  src={t.avatar}
+                  alt={t.author}
+                  className="h-12 w-12 rounded-full object-cover border-2 border-accent/50"
+                />
+                <div>
+                  <p className="font-bold font-outfit text-xl">{t.author}</p>
+                  <p className="text-blue-200 text-sm">{t.role}</p>
+                </div>
               </div>
             </motion.div>
           ))}

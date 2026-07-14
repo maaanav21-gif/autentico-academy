@@ -29,9 +29,11 @@ export default function About() {
                 viewport={{ once: true }}
                 className="flex items-start gap-4 p-6 rounded-2xl bg-muted/50 border border-border"
               >
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <UserCheck className="h-6 w-6 text-primary" />
-                </div>
+                <img
+                  src="/images/soumya-menon.png"
+                  alt="Dr. Soumya V. Menon"
+                  className="h-24 w-20 rounded-xl object-cover object-top shrink-0 border border-border shadow-sm"
+                />
                 <div>
                   <h4 className="text-xl font-bold text-foreground font-outfit">
                     Dr. Soumya V. Menon

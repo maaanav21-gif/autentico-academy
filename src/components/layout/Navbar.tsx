@@ -18,6 +18,7 @@ export default function Navbar() {
     { name: "Programs", href: "#programs" },
     { name: "Why Us", href: "#why-choose-us" },
     { name: "About", href: "#about" },
+    { name: "Certificates", href: "#certificates" },
     { name: "Contact", href: "#enquiry" },
   ];
 

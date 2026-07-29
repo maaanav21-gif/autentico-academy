@@ -4,6 +4,7 @@ import Associates from "@/components/sections/Associates";
 import Programs from "@/components/sections/Programs";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import About from "@/components/sections/About";
+import Certificates from "@/components/sections/Certificates";
 import Stats from "@/components/sections/Stats";
 import Testimonials from "@/components/sections/Testimonials";
 import EnquiryForm from "@/components/sections/EnquiryForm";
@@ -19,6 +20,7 @@ export default function Home() {
         <Programs />
         <WhyChooseUs />
         <About />
+        <Certificates />
         <Stats />
         <Testimonials />
         <EnquiryForm />

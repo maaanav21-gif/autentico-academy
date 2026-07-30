@@ -62,20 +62,23 @@ export default function Certificates() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="group rounded-2xl border border-border bg-muted/30 overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                className="group rounded-2xl border border-border/80 bg-muted/30 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
               >
+                {/* Certificate Image Frame with Accent Outline */}
                 <div className="p-4 pb-0">
-                  <div className="rounded-xl overflow-hidden border border-border bg-white flex items-center justify-center min-h-[220px]">
+                  <div className="rounded-xl overflow-hidden border-2 border-primary/20 bg-white flex items-center justify-center h-[260px] p-2 relative shadow-inner">
                     <img
                       src={cert.src}
                       alt={cert.title}
                       loading="lazy"
-                      className={`w-full max-w-full h-auto object-contain transition-transform duration-300 ${
-                        isLakshyaCert ? "rotate-90 scale-90" : ""
+                      className={`max-w-full max-h-full object-contain transition-transform duration-300 ${
+                        isLakshyaCert ? "-rotate-90 scale-75 py-4" : ""
                       }`}
                     />
                   </div>
                 </div>
+
+                {/* Card Info */}
                 <div className="p-6">
                   <div className="flex items-start gap-3">
                     <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">

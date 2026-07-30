@@ -82,8 +82,8 @@ export default function About() {
           >
             <div className="aspect-square md:aspect-auto md:h-[600px] rounded-3xl overflow-hidden shadow-2xl relative border-8 border-white dark:border-muted">
               <img
-                src="/images/about-academy.jpg"
-                alt="Students learning at Autentico Academy"
+                src="/Photos/1779441842148.jpg"
+                alt="Quality Control Lab at Autentico Academy"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />

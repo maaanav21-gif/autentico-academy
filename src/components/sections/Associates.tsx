@@ -1,19 +1,19 @@
 const associates = [
   {
     name: "VAARUNYA BIOLABS PRIVATE LIMITED",
-    image: "/images/science-lab.jpg",
+    image: "/Photos/1779441843362.jpg",
   },
   {
     name: "INSILICOMICS",
-    image: "/images/college-internship.jpg",
+    image: "/Photos/1779441840713.jpg",
   },
   {
     name: "INDIAN INSTITUTE OF SCIENCE",
-    image: "/images/campus-building.jpg",
+    image: "/Photos/1779441842148.jpg",
   },
   {
     name: "NIUM",
-    image: "/images/classroom-learning.jpg",
+    image: "/Photos/extracted/photos-pdf-page-1.png",
   },
 ];
 

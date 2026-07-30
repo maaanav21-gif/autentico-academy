@@ -246,7 +246,7 @@ export default function EnquiryForm() {
 
             <div className="rounded-2xl overflow-hidden border border-border bg-card">
               <img
-                src="/images/campus-building.jpg"
+                src="/Photos/extracted/photos-pdf-page-1.png"
                 alt="Autentico Academy campus"
                 className="w-full h-40 object-cover"
               />

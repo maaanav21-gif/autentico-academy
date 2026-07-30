@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-const schoolImg = "/images/school-students.jpg";
-const labImg = "/images/science-lab.jpg";
-const collegeImg = "/images/college-internship.jpg";
-const admissionsImg = "/images/classroom-learning.jpg";
+const schoolImg = "/Photos/extracted/photos-pdf-page-2.png";
+const labImg = "/Photos/1779441840713.jpg";
+const collegeImg = "/Photos/extracted/photos-pdf-page-3.png";
+const admissionsImg = "/Photos/1779441842148.jpg";
 
 export default function Programs() {
   const programs = [

@@ -31,8 +31,8 @@ export default function WhyChooseUs() {
             className="lg:col-span-1 rounded-2xl overflow-hidden shadow-lg border border-border"
           >
             <img
-              src="/images/classroom-learning.jpg"
-              alt="Interactive classroom at Autentico Academy"
+              src="/Photos/1779441843362.jpg"
+              alt="Field visit and practical learning at Autentico Academy"
               className="w-full h-64 lg:h-80 object-cover"
             />
           </motion.div>
@@ -43,8 +43,8 @@ export default function WhyChooseUs() {
             className="lg:col-span-2 rounded-2xl overflow-hidden shadow-lg border border-border"
           >
             <img
-              src="/images/school-students.jpg"
-              alt="Students engaged in learning"
+              src="/Photos/extracted/photos-pdf-page-4.png"
+              alt="Students engaged in practical learning"
               className="w-full h-64 lg:h-80 object-cover"
             />
           </motion.div>

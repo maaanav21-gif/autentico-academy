@@ -16,9 +16,9 @@ const certificates = [
   },
   {
     src: "/certificates/archita-certificate.png",
-    title: "Lakshya Business Plan — 2nd Place",
+    title: "Lakshya Business Plan — Dr. Soumya V. Menon",
     description:
-      "Certificate of Merit at ICEIL-2023 for securing second position in the Lakshya Business Plan Competition.",
+      "Best Business Plan Award at Amity University ICEIL-2023 for outstanding innovation and presentation.",
   },
   {
     src: "/certificates/yashwanth-iisc-internship.png",
@@ -28,7 +28,7 @@ const certificates = [
   },
   {
     src: "/certificates/athira-iisc-internship.png",
-    title: "IISc Internship — Athira K",
+    title: "IISc Internship — Athira K & Azmath Unnisa",
     description:
       "Five-month internship certificate from IISc Bangalore, High Voltage Laboratory, in plasma applications for agriculture.",
   },
@@ -52,42 +52,48 @@ export default function Certificates() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {certificates.map((cert, index) => (
-            <motion.article
-              key={cert.src}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="group rounded-2xl border border-border bg-muted/30 overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
-            >
-              <div className="p-4 pb-0">
-                <div className="rounded-xl overflow-hidden border border-border bg-white">
-                  <img
-                    src={cert.src}
-                    alt={cert.title}
-                    loading="lazy"
-                    className="w-full max-w-full h-auto object-contain"
-                  />
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="flex items-start gap-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                    <Award className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold font-outfit text-foreground mb-2">
-                      {cert.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {cert.description}
-                    </p>
+          {certificates.map((cert, index) => {
+            const isLakshyaCert = cert.src.includes("archita-certificate");
+
+            return (
+              <motion.article
+                key={cert.src}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="group rounded-2xl border border-border bg-muted/30 overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+              >
+                <div className="p-4 pb-0">
+                  <div className="rounded-xl overflow-hidden border border-border bg-white flex items-center justify-center min-h-[220px]">
+                    <img
+                      src={cert.src}
+                      alt={cert.title}
+                      loading="lazy"
+                      className={`w-full max-w-full h-auto object-contain transition-transform duration-300 ${
+                        isLakshyaCert ? "rotate-90 scale-90" : ""
+                      }`}
+                    />
                   </div>
                 </div>
-              </div>
-            </motion.article>
-          ))}
+                <div className="p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <Award className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold font-outfit text-foreground mb-2">
+                        {cert.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {cert.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.article>
+            );
+          })}
         </div>
       </div>
     </section>

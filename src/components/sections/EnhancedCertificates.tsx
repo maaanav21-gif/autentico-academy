@@ -23,13 +23,13 @@ const certificates = [
   },
   {
     src: "/certificates/yashwanth-iisc-internship.png",
-    title: "IISc Internship — Yashwanth N",
+    title: "IISc Internship — Yashwanth N & Athira K",
     issuer: "IISC HIGH VOLTAGE LABORATORY",
     description: "Five-month intensive research internship in plasma applications.",
   },
   {
     src: "/certificates/athira-iisc-internship.png",
-    title: "IISc Internship — Athira K",
+    title: "IISc Internship — Azmath Unnisa",
     issuer: "IISC HIGH VOLTAGE LABORATORY",
     description: "Five-month intensive research internship in plasma applications.",
   },

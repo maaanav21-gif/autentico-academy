@@ -61,19 +61,19 @@ export default function Certificates() {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className="group rounded-2xl border border-border bg-muted/30 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
             >
-              {/* Certificate Image Outline Box */}
+              {/* Enlarged Neutral Frame (No Highlight Accent) */}
               <div className="p-4 pb-0">
-                <div className="rounded-xl overflow-hidden border-2 border-primary/20 bg-white flex items-center justify-center h-[240px] sm:h-[260px] p-3 shadow-inner">
+                <div className="rounded-xl overflow-hidden border border-border bg-white flex items-center justify-center h-[340px] sm:h-[380px] p-2">
                   <img
                     src={cert.src}
                     alt={cert.title}
                     loading="lazy"
-                    className="max-w-full max-h-full object-contain"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </div>
 
-              {/* Card Details */}
+              {/* Card Info */}
               <div className="p-6">
                 <div className="flex items-start gap-3">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
